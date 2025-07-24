@@ -1,0 +1,18 @@
+<%- include("includes/head.ejs")%>
+<body>
+    <h2 style="text-align: center;">User Posts</h2>
+    <div id="container">
+      <%for(post of posts){ %>
+        <div id="post" >
+            <div >
+            <img id="postimg" src="<%=post.image%>" alt="img">
+            </div>
+            
+            <h3>username :@<%=post.username%></h3>
+            <p id="post-content"><%=post.content%></p>
+        </div>
+      <%}%>
+
+    </div>
+</body>
+</html>
