@@ -4,6 +4,7 @@ const app=express();
 const port=8080;
 const posts=require("./views/data.js");
 const fs = require("fs");
+const {v4:uuidv4}=require("uuid");
 app.set("view engine","ejs");
 app.set("views",path.join(__dirname,"/views"));
 app.use(express.urlencoded({ extended: true }));
@@ -22,6 +23,7 @@ app.get("/posts/new",(req,res)=>{
 app.post("/posts",(req,res)=>{
   const { user, url, content } = req.body;
   posts.push({
+    id:uuidv4(),
     username: user,
     image: url,
     content: content
