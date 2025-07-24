@@ -7,7 +7,7 @@ app.set("view engine","views");
 app.set("views",path.join(__dirname,"/views"));
 app.use(express.urlencoded({extented:true}));
 app.use(express.json());
-
+app.use(express.static('public'));
 app.get("/",(req,res)=>{
   res.send("<h1>User Posts</h1>")
 })
