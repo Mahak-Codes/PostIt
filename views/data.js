@@ -2,7 +2,7 @@ let posts = [
   {
     "id": "c930ce3e-ce3f-4858-a7ff-ecfbb73195ac",
     "username": "mahak.codes",
-    "content": "Super pumped to contribute to open source this month! 💻🔥 #GirlWhoCodes",
+    "content": "Super pumped to contribute to open source this month! 💻🔥 #MahakCodes",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThOwO3JZp95BH5nnOB7i_-Ssqx2EAtdOXS2g&s"
   },
   {
