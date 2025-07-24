@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post in Detail</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <h1 style="text-align:center">User Post</h1>
+    <div id="container">
+      <div id="post" >
+        <img id="postimg" src="<%=post.image%>" alt="img">
+        <div id="post-content">
+            <h3>username :@<%=post.username%></h3>
+            <p>post id:<%=post.id %></p>
+            <p><%=post.content%></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -13,7 +13,7 @@
   border: solid black;
   background-color: beige;
   width: 300px;
-  height: 300px;
+  height: 350px;
   border-radius: 5px;
   overflow: scroll;
 }
@@ -37,12 +37,14 @@
 }
 a{
     text-decoration: none;
-    border:black solid;
+    border:solid black;
+    padding: 2px;
+    background-color: rgb(210, 142, 231);
+    color: black;
+    margin: 10px;
+}
+#create-post{
     position: absolute;
     right: 10px;
     top:3px;
-    padding: 2px;
-    background-color: salmon;
-    color: blue;
-   
 }

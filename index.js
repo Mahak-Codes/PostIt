@@ -33,17 +33,12 @@ app.post("/posts",(req,res)=>{
 
 app.get("/posts/:id",(req,res)=>{
   const {id}=req.params;
-  let post=[];
-  for(let p of posts){
-    if(id==p.id){
-      post.push(p);
-    }
-  }
-  if(post.length==0){
-      res.send("<h1>No such post exists</h1>")
+  let post=posts.find((p)=>p.id===id);
+  if(post==undefined){
+    res.send("<h1>No such post exists</h1>")
   }
   else{
-    res.render("index.ejs",{posts:post});
+    res.render("show.ejs",{post});
   }
 })
 app.listen(port,(req,res)=>{
