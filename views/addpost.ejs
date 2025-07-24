@@ -1,0 +1,13 @@
+<%- include("includes/head.ejs")%>
+<body>
+    <div id="newpost">  
+      <form method="post" action="/posts">
+        <h2>Create new post</h2><br>
+        <input type="text" name="user"placeholder="Enter username"/><br><br>
+        <input type="text" id="url" name="url" placeholder="Enter image url" /><br><br>
+        <textarea name="content" placeholder="Enter content"></textarea><br><br><br>
+        <button>Submit Post</button>
+      </form>
+    </div>
+  </body>
+</html>

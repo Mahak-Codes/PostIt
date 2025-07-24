@@ -1,6 +1,7 @@
 <%- include("includes/head.ejs")%>
 <body>
-    <h2 style="text-align: center;">User Posts</h2>
+    <h2 style="text-align: center; margin:10px;">User Posts</h2>
+    <a href="/posts/new">Create New Post</a>
     <div id="container">
       <%for(post of posts){ %>
         <div id="post" >

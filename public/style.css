@@ -13,7 +13,9 @@
   border: solid black;
   background-color: beige;
   width: 300px;
+  height: 300px;
   border-radius: 5px;
+  overflow: scroll;
 }
 #postimg {
   width: 100%;
@@ -22,4 +24,25 @@
 }
 #post-content {
   padding: 10px;
+ 
+}
+#newpost {
+  border: solid grey 1px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  width: 50vw;
+  margin-left: 20vw;
+  margin-top: 80px;
+}
+a{
+    text-decoration: none;
+    border:black solid;
+    position: absolute;
+    right: 10px;
+    top:3px;
+    padding: 2px;
+    background-color: salmon;
+    color: blue;
+   
 }
