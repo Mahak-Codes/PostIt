@@ -30,6 +30,22 @@ app.post("/posts",(req,res)=>{
   fs.writeFileSync(path.join(__dirname, "views", "data.js"), updatedData);
   res.redirect("/posts");
 })
+
+app.get("/posts/:id",(req,res)=>{
+  const {id}=req.params;
+  let post=[];
+  for(let p of posts){
+    if(id==p.id){
+      post.push(p);
+    }
+  }
+  if(post.length==0){
+      res.send("<h1>No such post exists</h1>")
+  }
+  else{
+    res.render("index.ejs",{posts:post});
+  }
+})
 app.listen(port,(req,res)=>{
   console.log(`Server is listening  on ${port}`);
 })
