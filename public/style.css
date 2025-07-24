@@ -41,10 +41,22 @@ a{
     padding: 2px;
     background-color: rgb(210, 142, 231);
     color: black;
-    margin: 10px;
+    margin: 5px;
 }
 #create-post{
     position: absolute;
     right: 10px;
     top:3px;
+}
+#delete-btn{
+  background-color: rgb(210, 142, 231);
+  color: black;
+  padding: 2px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 15px;
+  position: relative;
+  left:200px;
+  margin: 5px;
+  bottom: 27px;
+  border:solid black;
 }
