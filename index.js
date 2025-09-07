@@ -1,7 +1,7 @@
 const express = require("express");
 const path = require("path");
 const app = express();
-const port = 8080;
+const port = process.env.PORT || 8080;
 let posts = require("./views/data.js");
 const fs = require("fs");
 const { v4: uuidv4 } = require("uuid");
